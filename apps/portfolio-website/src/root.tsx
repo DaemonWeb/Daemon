@@ -18,11 +18,6 @@ import "./root.css";
 import NavBar from "./components/NavBar";
 
 export default function Root() {
-  const location = useLocation();
-  const active = (path: string) =>
-    path == location.pathname
-      ? "border-sky-600"
-      : "border-transparent hover:border-sky-600";
   return (
     <Html lang="en">
       <Head>
@@ -35,8 +30,8 @@ export default function Root() {
           <ErrorBoundary>
             <Layout navBar={<NavBar/>} content={
               <Routes>
-                  <FileRoutes />
-                </Routes>
+                <FileRoutes />
+              </Routes>
             } />
           </ErrorBoundary>
         </Suspense>
