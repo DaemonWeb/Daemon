@@ -1,7 +1,9 @@
+import { useRouteData, RouteDataArgs, createRouteData } from "solid-start";
 import ListView from "~/components/ListView";
 import projectData from "~/data/projects";
 
-export default function About() {
+
+export default function Projects() {
     return (
       <ListView 
         title={"Projects"}
