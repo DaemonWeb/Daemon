@@ -1,5 +1,6 @@
 export type Project = {
     title: string;
+    slug: string;
     thumbnail: string;
     description: string;
     repoUrl?: string;
