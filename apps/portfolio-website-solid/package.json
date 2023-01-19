@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-website",
+  "name": "portfolio-website-solid",
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
