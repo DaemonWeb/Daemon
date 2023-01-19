@@ -1,4 +1,5 @@
 import { Project, ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../types";
+import { slugify } from "../utils";
 
 
 export default [
@@ -208,4 +209,9 @@ export default [
             ProjectRole.Backend,
         ]
     }
-] as Project[];
+].map((project) => {
+    return {
+        ...project,
+        slug: slugify(project.title)
+    }
+}) as Project[];
