@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 
 export default function NavProfile({
@@ -7,7 +7,7 @@ export default function NavProfile({
     imgAlt = "Profile picture"
 }: {
     name: string,
-    imgSrc: string,
+    imgSrc: StaticImageData,
     imgAlt?: string,
 }) {
     return (
@@ -21,6 +21,7 @@ export default function NavProfile({
                             alt={imgAlt}
                             width={36}
                             height={36}
+                            placeholder="blur"
                         />
                     </div>
                     <div className="ml-3">

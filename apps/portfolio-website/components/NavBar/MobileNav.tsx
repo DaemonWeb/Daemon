@@ -5,6 +5,8 @@ import NavOption from './NavOption';
 import { NavOptionInput } from '@/lib/types';
 import NavProfile from './NavProfile';
 import NavLogo from './NavLogo';
+import daemonLogo from '@/public/images/daemon_logo.svg';
+import joshyPic from '@/public/images/joshy.jpg';
 
 
 export default function MobileNav({
@@ -48,7 +50,7 @@ export default function MobileNav({
                             
                             <div className="h-0 flex-1 overflow-y-auto pt-5 pb-4">
                                 <NavLogo
-                                    imgSrc='/images/daemon_logo.svg'
+                                    imgSrc={daemonLogo}
                                     imgAlt="Daemon Web Tools logo"
                                 />
 
@@ -67,7 +69,7 @@ export default function MobileNav({
 
                             <NavProfile
                                 name="Josh Elias"
-                                imgSrc='/images/joshy.jpg'
+                                imgSrc={joshyPic}
                                 imgAlt="Josh Elias profile picture"
                             />
 
