@@ -72,6 +72,7 @@ export default function Projects() {
                                                             alt="Project Thumbnail"
                                                             width={40}
                                                             height={40} 
+                                                            placeholder="blur"
                                                         />
                                                     </div>
                                                     <div className="ml-4">
