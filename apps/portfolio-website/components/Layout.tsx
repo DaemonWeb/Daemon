@@ -11,6 +11,7 @@ import MobileNav from './MobileNav';
 import SideNav from './SideNav';
 import ContentView from './ContentView';
 
+
 const navOptions: NavOptionInput[] = [
   { title: 'Home', href: '/', icon: HomeIcon },
   { title: 'Services', href: '/services', icon: BriefcaseIcon },

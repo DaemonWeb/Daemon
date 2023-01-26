@@ -1,7 +1,6 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
 import NavOption from './NavOption';
 import { NavOptionInput } from '@/lib/types';
 import NavProfile from './NavProfile';
@@ -47,8 +46,33 @@ export default function MobileNav({
                     >
                         <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-indigo-700">
                             
-                            {/** Close button */}
-                            <Transition.Child
+                            <div className="h-0 flex-1 overflow-y-auto pt-5 pb-4">
+                                <NavLogo
+                                    imgSrc='/images/daemon_logo.svg'
+                                    imgAlt="Daemon Web Tools logo"
+                                />
+
+                                {/** Sidebar links */}
+                                <nav className="mt-5 space-y-1 px-2">
+                                    {navOptions.map((option) => (
+                                        <NavOption
+                                            key={option.title}
+                                            title={option.title}
+                                            href={option.href}
+                                            icon={option.icon}
+                                        />
+                                    ))}
+                                </nav>
+                            </div>
+
+                            <NavProfile
+                                name="Josh Elias"
+                                imgSrc='/images/joshy.jpg'
+                                imgAlt="Josh Elias profile picture"
+                            />
+
+                             {/** Close button */}
+                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-in-out duration-300"
                                 enterFrom="opacity-0"
@@ -68,36 +92,10 @@ export default function MobileNav({
                                     </button>
                                 </div>
                             </Transition.Child>
-
-
-                            <div className="h-0 flex-1 overflow-y-auto pt-5 pb-4">
-                                
-                                <NavLogo
-                                    imgSrc='/images/daemon_logo.svg'
-                                    imgAlt="Daemon Web Tools logo"
-                                />
-
-                                <nav className="mt-5 space-y-1 px-2">
-                                    {navOptions.map((option) => (
-                                        <NavOption
-                                            key={option.title}
-                                            title={option.title}
-                                            href={option.href}
-                                            icon={option.icon}
-                                        />
-                                    ))}
-                                </nav>
-                            </div>
-
-                            <NavProfile
-                                name="Josh Elias"
-                                imgSrc='/images/joshy.jpg'
-                                imgAlt="Josh Elias profile picture"
-                            />
                         </Dialog.Panel>
                     </Transition.Child>
 
-                    {/** Close button */}
+                    {/** Close button background */}
                     <div className="w-14 flex-shrink-0" aria-hidden="true">
                         {/* Force sidebar to shrink to fit close icon */}
                     </div>

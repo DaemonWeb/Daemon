@@ -1,6 +1,7 @@
 import ActiveLink from '@/components/ActiveLink';
 import { ActiveLinkProps, NavOptionInput  } from '@/lib/types';
 
+
 export default function NavOption(
     props: NavOptionInput & ActiveLinkProps
 ) {
