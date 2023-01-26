@@ -4,13 +4,15 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 
 export default function ContentView({ 
     children,
-    setMobileNavOpen 
+    setMobileNavOpen
 }: { 
     children: React.ReactNode 
     setMobileNavOpen: Dispatch<SetStateAction<boolean>>
 }) {
     return (
         <div className="flex flex-1 flex-col md:pl-64">
+
+            {/* Contains button to open nav menu when in mobile */}
             <div className="sticky top-0 z-10 bg-gray-100 pl-1 pt-1 sm:pl-3 sm:pt-3 md:hidden">
                 <button
                     type="button"
@@ -21,16 +23,33 @@ export default function ContentView({
                     <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </button>
             </div>
-            <main className="flex-1">
-                <div className="py-6">
-                    <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                        <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
-                    </div>
-                    <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                        {children}
-                    </div>
-                </div>
-            </main>
+
+            <div className="flex-1">
+                {children}
+            </div>
         </div>
+    )
+}
+
+
+export function ContentWrapper({
+    children,
+    title
+}: {
+    children: React.ReactNode,
+    title?: string
+}) {
+    return (
+        <main className="py-6">
+            {title && (
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
+                    <h1 className="text-2xl font-semibold text-gray-900">{title}</h1>
+                </div>
+            )}
+            
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
+                {children}
+            </div>
+        </main>
     )
 }
