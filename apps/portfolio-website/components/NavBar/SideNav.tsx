@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { NavOptionInput } from '@/lib/types';
-import NavOption from '@/components/NavOption';
+import NavOption from '@/components/NavBar/NavOption';
 import NavProfile from './NavProfile';
 import NavLogo from './NavLogo';
 

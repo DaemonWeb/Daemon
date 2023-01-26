@@ -7,8 +7,8 @@ import {
   ClipboardIcon,
 } from '@heroicons/react/24/outline';
 import { NavOptionInput } from '@/lib/types';
-import MobileNav from './MobileNav';
-import SideNav from './SideNav';
+import MobileNav from './NavBar/MobileNav';
+import SideNav from './NavBar/SideNav';
 import ContentView from './ContentView';
 
 
