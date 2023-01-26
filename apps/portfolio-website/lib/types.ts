@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { LinkProps } from "next/link";
 
 export type NavOptionInput = {
@@ -15,7 +16,7 @@ export type ActiveLinkProps = LinkProps & {
 export type Project = {
     id: string;
     title: string;
-    imgSrc: string;
+    imgSrc: StaticImageData;
     description: string;
     repoUrl?: string;
     url: string;

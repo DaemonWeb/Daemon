@@ -1,10 +1,21 @@
 import { Project, ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../lib/types";
 import { slugify } from "@/lib/utils";
 
+import muskokaWebsiteThumbnail from "@/public/images/muskoka_website_thumbnail.jpg";
+import icpncThumbnail from "@/public/images/icpnc_thumbnail.jpg";
+import smartWebsiteThumbnail from "@/public/images/smart_website_thumbnail.jpg";
+import autocorpThumbnail from "@/public/images/autocorp_thumbnail.jpg";
+import clcWebsiteThumbnail from "@/public/images/clc_website_thumbnail.jpg";
+import clcAppThumbnail from "@/public/images/clc_app_thumbnail.jpg";
+import tempoWebsiteThumbnail from "@/public/images/tempo_website_thumbnail.jpg";
+import tempoDraftThumbnail from "@/public/images/tempo_draft_thumbnail.jpg";
+import sparkWebsiteThumbnail from "@/public/images/spark_thumbnail.jpg";
+
+
 export default [
     {
         title: "Muskoka Cabinet Company",
-        imgSrc: "/images/muskoka_website_thumbnail.jpg",
+        imgSrc: muskokaWebsiteThumbnail,
         description: "A marketing website for a local cabinet making company.",
         repoUrl: "https://github.com/JoshElias/muskoka-website_2022",
         url: "https://www.muskokacabco.com",
@@ -24,7 +35,7 @@ export default [
     },
     {
         title: "ICPNC",
-        imgSrc: "/images/icpnc_thumbnail.jpg",
+        imgSrc: icpncThumbnail,
         description: "The ICPNC brings together leading practitioners in child protection to enhance Canadian organizations’ capacity to ensure results-oriented, innovative and effective child protection programming.",
         url: "https://www.icpnc.org",
         publishDate: new Date("2020-10-05"),
@@ -45,7 +56,7 @@ export default [
     },
     {
         title: "SMART MRP",
-        imgSrc: "/images/smart_website_thumbnail.jpg",
+        imgSrc: smartWebsiteThumbnail,
         description: "SMART is a shop management and resource tool that helps manufacturers and distributors manage their shop floor and resources.",
         repoUrl: "https://github.com/JoshElias/smart-website",
         url: "https://www.smartmrp.com",
@@ -67,7 +78,7 @@ export default [
     },
     {
         title: "AVA Product Suite",
-        imgSrc: "/images/autocorp_thumbnail.jpg",
+        imgSrc: autocorpThumbnail,
         description: "Autocorp provides high converting commerce tools for forward thinking dealers that fast tracks your online deal & financing process.",
         url: "https://www.autocorp.ai",
         publishDate: new Date("2019-06-11"),
@@ -95,7 +106,7 @@ export default [
         title: "Car Loans Canada",
         url: "https://web.archive.org/web/20191007192100/https://www.carloanscanada.com/",
         description: "Find out what vehicles you're eligible for today.",
-        imgSrc: "/images/clc_website_thumbnail.jpg",
+        imgSrc: clcWebsiteThumbnail,
         publishDate: new Date("2018-03-15"),
         type: ProjectType.Website,
         features: [
@@ -119,7 +130,7 @@ export default [
         title: "Car Loans Canada Credit Application",
         url: "https://apply.carloanscanada.com/",
         description: "A multi-step credit application for Car Loans Canada.",
-        imgSrc: "/images/clc_app_thumbnail.jpg",
+        imgSrc: clcAppThumbnail,
         publishDate: new Date("2018-05-13"),
         type: ProjectType.Website,
         features: [
@@ -142,7 +153,7 @@ export default [
         url: "https://www.tempostorm.com/",
         description: "Tempostorm is a website for esports news and content.",
         repoUrl: "https://github.com/JoshElias/esports-website",
-        imgSrc: "/images/tempo_website_thumbnail.jpg",
+        imgSrc: tempoWebsiteThumbnail,
         publishDate: new Date("2015-08-17"),
         type: ProjectType.Website,
         features: [
@@ -169,7 +180,7 @@ export default [
         url: "https://tempostorm.com/hearthstone/sealed-generator",
         description: "A deck builder for Hearthstone made for Redbull Tournaments.",
         repoUrl: "https://github.com/JoshElias/esports-website",
-        imgSrc: "/images/tempo_draft_thumbnail.jpg",
+        imgSrc: tempoDraftThumbnail,
         publishDate: new Date("2016-02-03"),
         type: ProjectType.Game,
         features: [
@@ -191,7 +202,7 @@ export default [
         url: "https://web.archive.org/web/20180218184619/http://sparkscreens.com/",
         description: "A kiosk platform built with Unity3D and Android Studio",
         repoUrl: "https://github.com/JoshElias/esports-website",
-        imgSrc: "/images/spark_thumbnail.jpg",
+        imgSrc: sparkWebsiteThumbnail,
         publishDate: new Date("2012-01-17"),
         type: ProjectType.Game,
         features: [
