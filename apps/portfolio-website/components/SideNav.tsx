@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { NavOptionInput } from '@/lib/types';
 import NavOption from '@/components/NavOption';
 import NavProfile from './NavProfile';
+import NavLogo from './NavLogo';
 
 
 export default function SideNav({ 
@@ -11,18 +12,16 @@ export default function SideNav({
 }) {
     return (
         <div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
-            {/* Sidebar component, swap this element with another sidebar if you like */}
+
             <div className="flex min-h-0 flex-1 flex-col bg-indigo-700">
                 <div className="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
-                    <div className="flex flex-shrink-0 items-center px-4">
-                        <Image
-                            className="h-8 w-auto"
-                            src="/images/daemon_logo.svg"
-                            alt="Daemon Web Tools"
-                            width={32}
-                            height={32}
-                        />
-                    </div>
+
+                    <NavLogo
+                        imgSrc="/images/daemon_logo.svg"
+                        imgAlt="Daemon Web Tools logo"
+                    />
+
+                    {/** Sidebar links */}
                     <nav className="mt-5 flex-1 space-y-1 px-2">
                         {navOptions.map((option) => (
                             <NavOption

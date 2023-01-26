@@ -5,6 +5,7 @@ import Image from 'next/image';
 import NavOption from './NavOption';
 import { NavOptionInput } from '@/lib/types';
 import NavProfile from './NavProfile';
+import NavLogo from './NavLogo';
 
 
 export default function MobileNav({
@@ -70,15 +71,11 @@ export default function MobileNav({
 
 
                             <div className="h-0 flex-1 overflow-y-auto pt-5 pb-4">
-                                <div className="flex flex-shrink-0 items-center px-4">
-                                    <Image
-                                        className="h-8 w-auto"
-                                        src="/images/daemon_logo.svg"
-                                        alt="Daemon Web Tools"
-                                        width={32}
-                                        height={32}
-                                    />
-                                </div>
+                                
+                                <NavLogo
+                                    imgSrc='/images/daemon_logo.svg'
+                                    imgAlt="Daemon Web Tools logo"
+                                />
 
                                 <nav className="mt-5 space-y-1 px-2">
                                     {navOptions.map((option) => (
