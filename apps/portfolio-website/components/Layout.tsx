@@ -1,24 +1,22 @@
 import { useState } from 'react';
 import {
-  CalendarIcon,
-  ChartBarIcon,
+  BriefcaseIcon,
+  CommandLineIcon,
   FolderIcon,
   HomeIcon,
-  InboxIcon,
-  UsersIcon,
+  ClipboardIcon,
 } from '@heroicons/react/24/outline';
-import { NavOption } from '@/lib/types';
+import { NavOptionInput } from '@/lib/types';
 import MobileNav from './MobileNav';
 import SideNav from './SideNav';
 import ContentView from './ContentView';
 
-const navOptions: NavOption[] = [
-  { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-  { name: 'Team', href: '#', icon: UsersIcon, current: false },
-  { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-  { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-  { name: 'Documents', href: '#', icon: InboxIcon, current: false },
-  { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
+const navOptions: NavOptionInput[] = [
+  { title: 'Home', href: '/', icon: HomeIcon },
+  { title: 'Services', href: '/services', icon: BriefcaseIcon },
+  { title: 'Projects', href: '/projects', icon: FolderIcon },
+  { title: 'Skills', href: '/skills', icon: CommandLineIcon },
+  { title: 'Resume', href: '/resume', icon: ClipboardIcon },
 ]
 
 export default function Layout({ 

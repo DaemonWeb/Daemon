@@ -1,6 +1,13 @@
-export type NavOption = {
-    name: string,
+import { LinkProps } from "next/link";
+
+export type NavOptionInput = {
+    title: string,
     href: string,
     icon: any,
-    current: boolean
+}
+
+export type ActiveLinkProps = LinkProps & {
+    className?: string
+    activeClassName?: string
+    inactiveClassName?: string
 }

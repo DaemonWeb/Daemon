@@ -2,8 +2,8 @@ import { Fragment, Dispatch, SetStateAction } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import { NavOption } from '@/lib/types';
-import { classNames } from '@/lib/utils';
+import NavOption from './NavOption';
+import { NavOptionInput } from '@/lib/types';
 
 export default function MobileNav({
     isOpen,
@@ -12,7 +12,7 @@ export default function MobileNav({
 }: {
     isOpen: boolean,
     setIsOpen: Dispatch<SetStateAction<boolean>>
-    navOptions: NavOption[]
+    navOptions: NavOptionInput[]
 }) {
     return (
         <Transition.Root show={isOpen} as={Fragment}>
@@ -79,20 +79,13 @@ export default function MobileNav({
                                 </div>
 
                                 <nav className="mt-5 space-y-1 px-2">
-                                    {navOptions.map((item) => (
-                                        <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className={classNames(
-                                            item.current
-                                            ? 'bg-indigo-800 text-white'
-                                            : 'text-white hover:bg-indigo-600 hover:bg-opacity-75',
-                                            'group flex items-center px-2 py-2 text-base font-medium rounded-md'
-                                        )}
-                                        >
-                                        <item.icon className="mr-4 h-6 w-6 flex-shrink-0 text-indigo-300" aria-hidden="true" />
-                                        {item.name}
-                                        </a>
+                                    {navOptions.map((option) => (
+                                        <NavOption
+                                            key={option.title}
+                                            title={option.title}
+                                            href={option.href}
+                                            icon={option.icon}
+                                        />
                                     ))}
                                 </nav>
                             </div>
@@ -109,7 +102,7 @@ export default function MobileNav({
                                             />
                                         </div>
                                         <div className="ml-3">
-                                            <p className="text-base font-medium text-white">Tom Cook</p>
+                                            <p className="text-base font-medium text-white">Josh Elias</p>
                                             <p className="text-sm font-medium text-indigo-200 group-hover:text-white">View profile</p>
                                         </div>
                                     </div>
