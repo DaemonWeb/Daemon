@@ -4,6 +4,8 @@ import { XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import NavOption from './NavOption';
 import { NavOptionInput } from '@/lib/types';
+import NavProfile from './NavProfile';
+
 
 export default function MobileNav({
     isOpen,
@@ -89,25 +91,12 @@ export default function MobileNav({
                                     ))}
                                 </nav>
                             </div>
-                            <div className="flex flex-shrink-0 border-t border-indigo-800 p-4">
-                                <a href="#" className="group block flex-shrink-0">
-                                    <div className="flex items-center">
-                                        <div>
-                                            <Image
-                                                className="inline-block h-10 w-10 rounded-full"
-                                                src="/images/joshy.jpg"
-                                                alt="Josh Elias profile picture"
-                                                width={40}
-                                                height={40}
-                                            />
-                                        </div>
-                                        <div className="ml-3">
-                                            <p className="text-base font-medium text-white">Josh Elias</p>
-                                            <p className="text-sm font-medium text-indigo-200 group-hover:text-white">View profile</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+
+                            <NavProfile
+                                name="Josh Elias"
+                                imgSrc='/images/joshy.jpg'
+                                imgAlt="Josh Elias profile picture"
+                            />
                         </Dialog.Panel>
                     </Transition.Child>
 
