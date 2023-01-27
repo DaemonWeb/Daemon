@@ -3,13 +3,26 @@ import Head from 'next/head'
 import { Project } from '@/lib/types';
 import projectData from "../data/project-data";
 import Image from 'next/image';
+import { combineClasses } from '@/lib/utils';
 
 
 const columns = [
-    "Project",
-    "Published",
-    "Source",
-    ""
+    {
+        title: "Project",
+        classNames: "pl-6 pr-3 ",
+    },
+    {
+        title: "Published",
+        classNames: "px-3 w-40"
+    },
+    {
+        title: "Source",
+        classNames: "px-3 text-center w-24"
+    },
+    {
+        title: "",
+        classNames: "px-3 w-24"
+    }
 ]
 
 function formatDate(date: Date) {
@@ -47,15 +60,21 @@ export default function Projects() {
                 <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                         <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-                            <table className="min-w-full divide-y divide-gray-300">
+                            <table className="min-w-full w-full divide-y divide-gray-300 table-fixed">
                                 <thead className="bg-gray-50">
                                     <tr>
-                                        {columns.map((columnName) => (
+                                        {columns.map((column) => (
                                             <th 
-                                                key={columnName}
+                                                key={column.title}
                                                 scope="col" 
-                                                className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
-                                                {columnName}
+                                                className={
+                                                    combineClasses(
+                                                        column.classNames,
+                                                        "py-3.5 text-left text-sm font-semibold text-gray-900"
+                                                    )
+                                                }
+                                            >
+                                                {column.title}
                                             </th> 
                                         ))}
                                     </tr>
@@ -75,7 +94,7 @@ export default function Projects() {
                                                             placeholder="blur"
                                                         />
                                                     </div>
-                                                    <div className="ml-4">
+                                                    <div className="mx-4 w-[calc(100%-56px)]">
                                                         <div className="font-medium text-gray-900">{project.title}</div>
                                                         {project.url && 
                                                             <div 
@@ -97,7 +116,7 @@ export default function Projects() {
                                             </td>
         
                                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                                <div className="flex text-gray-900">
+                                                <div className="flex text-gray-900 justify-center">
                                                     <a 
                                                         href={project.repoUrl} 
                                                         rel="noreferrer" 
@@ -114,7 +133,7 @@ export default function Projects() {
                                                     </a>
                                                 </div>
                                             </td>
-                                            <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                                            <td className="relative whitespace-nowrap text-center py-4 pl-3 pr-4 text-sm font-medium sm:pr-6">
                                                 <a 
                                                     href={project.url} 
                                                     className="text-indigo-600 hover:text-indigo-900"
