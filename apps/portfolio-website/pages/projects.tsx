@@ -4,6 +4,7 @@ import { Project } from '@/lib/types';
 import projectData from "../data/project-data";
 import Image from 'next/image';
 import { combineClasses } from '@/lib/utils';
+import Link from 'next/link';
 
 
 const columns = [
@@ -81,36 +82,40 @@ export default function Projects() {
                                 </thead>
                                 <tbody className="divide-y divide-gray-200 bg-white">
                                     {projects.map((project) => (
-                                        <tr key={project.id}>
+                                        <tr key={project.id}>    
                                             <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
-                                                <div className="flex items-center">
-                                                    <div className="h-10 w-10 flex-shrink-0">
-                                                        <Image 
-                                                            className="h-10 w-auto rounded-full" 
-                                                            src={project.imgSrc} 
-                                                            alt="Project Thumbnail"
-                                                            width={40}
-                                                            height={40} 
-                                                            placeholder="blur"
-                                                        />
-                                                    </div>
-                                                    <div className="mx-4 w-[calc(100%-56px)]">
-                                                        <div className="font-medium text-gray-900">{project.title}</div>
-                                                        {project.url && 
-                                                            <div 
-                                                                className="
-                                                                    text-gray-500
-                                                                    overflow-hidden
-                                                                    whitespace-nowrap
-                                                                    text-ellipsis
-                                                                ">
-                                                                    {project.url}
-                                                                </div>
-                                                        }
-                                                    </div>
-                                                </div>
-                                            </td>
+                                                <Link href={`/projects/${project.id}`}>
 
+                                                    <div className="flex items-center">
+                                                        <div className="h-10 w-10 flex-shrink-0">
+                                                            <Image 
+                                                                className="h-10 w-auto rounded-full" 
+                                                                src={project.imgSrc} 
+                                                                alt="Project Thumbnail"
+                                                                width={40}
+                                                                height={40} 
+                                                                placeholder="blur"
+                                                            />
+                                                        </div>
+                                                        <div className="mx-4 w-[calc(100%-56px)]">
+                                                            <div className="font-medium text-gray-900">{project.title}</div>
+                                                            {project.url && 
+                                                                <div 
+                                                                    className="
+                                                                        text-gray-500
+                                                                        overflow-hidden
+                                                                        whitespace-nowrap
+                                                                        text-ellipsis
+                                                                    ">
+                                                                        {project.url}
+                                                                    </div>
+                                                            }
+                                                        </div>
+                                                    </div>
+
+                                                </Link>    
+                                            </td>
+                                        
                                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                                 <div className="text-gray-900">{project.publishDate}</div>
                                             </td>
