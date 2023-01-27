@@ -1,11 +1,11 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image';
 
 
 export default function NavLogo({
     imgSrc,
     imgAlt = "Profile picture"
 }: {
-    imgSrc: string,
+    imgSrc: StaticImageData,
     imgAlt?: string,
 }) {
     return (
