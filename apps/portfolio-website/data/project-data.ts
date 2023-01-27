@@ -10,6 +10,7 @@ import clcAppThumbnail from "@/public/images/clc_app_thumbnail.jpg";
 import tempoWebsiteThumbnail from "@/public/images/tempo_website_thumbnail.jpg";
 import tempoDraftThumbnail from "@/public/images/tempo_draft_thumbnail.jpg";
 import sparkWebsiteThumbnail from "@/public/images/spark_thumbnail.jpg";
+import daemonTechWebsiteThumbnail from "@/public/images/daemon_technology_thumbnail.jpg";
 
 
 export default [
@@ -152,6 +153,7 @@ export default [
         title: "Daemon Technology",
         url: "https://web.archive.org/web/20180822083745/https://daemontechnology.com/",
         description: "My original company website with a little too much personality.",
+        imgSrc: daemonTechWebsiteThumbnail,
         repoUrl: "https://github.com/JoshElias/daemon_technology_2018",
         publishDate: new Date("2018-08-22"),
         type: ProjectType.Website,

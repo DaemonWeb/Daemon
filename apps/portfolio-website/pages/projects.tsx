@@ -124,7 +124,7 @@ export default function Projects() {
                                                         className="text-indigo-600 hover:text-indigo-900 disabled:opacity-75"
                                                     >
                                                         <Image 
-                                                            className="h-9" 
+                                                            className="h-9 w-auto" 
                                                             src="/images/github_logo.svg"
                                                             alt="Github Logo"
                                                             width={32}
