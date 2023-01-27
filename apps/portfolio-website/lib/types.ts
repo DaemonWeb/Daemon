@@ -37,6 +37,7 @@ export const enum ProjectType {
 export const enum ProjectFeature {
     Blog = "Blog",
     CMS = "CMS",
+    Portfolio = "Portfolio",
     Ecommerce = "Ecommerce",
     Localization = "Localization",
     Newsletter = "Newsletter",
