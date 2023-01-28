@@ -1,82 +1,17 @@
 import { Project, ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../lib/types";
-import { slugify } from "@/lib/utils";
 
-import muskokaWebsiteThumbnail from "@/public/images/muskoka_website_thumbnail.jpg";
-import icpncThumbnail from "@/public/images/icpnc_thumbnail.jpg";
-import smartWebsiteThumbnail from "@/public/images/smart_website_thumbnail.jpg";
-import autocorpThumbnail from "@/public/images/autocorp_thumbnail.jpg";
-import clcWebsiteThumbnail from "@/public/images/clc_website_thumbnail.jpg";
-import clcAppThumbnail from "@/public/images/clc_app_thumbnail.jpg";
-import tempoWebsiteThumbnail from "@/public/images/tempo_website_thumbnail.jpg";
-import tempoDraftThumbnail from "@/public/images/tempo_draft_thumbnail.jpg";
-import sparkWebsiteThumbnail from "@/public/images/spark_thumbnail.jpg";
-import daemonTechWebsiteThumbnail from "@/public/images/daemon_technology_thumbnail.jpg";
+
+import autocorpThumbnail from "@/public/images/autocorp/autocorp_thumbnail.jpg";
+import clcWebsiteThumbnail from "@/public/images/clc_website/clc_website_thumbnail.jpg";
+import clcAppThumbnail from "@/public/images/clc_app/clc_app_thumbnail.jpg";
+import tempoWebsiteThumbnail from "@/public/images/tempo_website/tempo_website_thumbnail.jpg";
+import tempoDraftThumbnail from "@/public/images/tempo_draft/tempo_draft_thumbnail.jpg";
+import sparkWebsiteThumbnail from "@/public/images/spark/spark_thumbnail.jpg";
+import daemonTechWebsiteThumbnail from "@/public/images/daemon_technology/daemon_technology_thumbnail.jpg";
 
 
 export default [
-    {
-        title: "Muskoka Cabinet Company",
-        imgSrc: muskokaWebsiteThumbnail,
-        description: "A marketing website for a local cabinet making company.",
-        repoUrl: "https://github.com/JoshElias/muskoka-website_2022",
-        url: "https://www.muskokacabco.com",
-        publishDate: new Date("2022-07-12"),
-        type: ProjectType.Website,
-        features: [
-            ProjectFeature.CMS,
-            ProjectFeature.Blog
-        ],
-        tech: [
-            ProjectTech.Webflow,
-        ],
-        roles: [
-            ProjectRole.Fullstack,
-            ProjectRole.Design,
-        ]
-    },
-    {
-        title: "ICPNC",
-        imgSrc: icpncThumbnail,
-        description: "The ICPNC brings together leading practitioners in child protection to enhance Canadian organizations’ capacity to ensure results-oriented, innovative and effective child protection programming.",
-        url: "https://www.icpnc.org",
-        publishDate: new Date("2020-10-05"),
-        type: ProjectType.Website,
-        features: [
-            ProjectFeature.CMS,
-            ProjectFeature.Blog,
-            ProjectFeature.Localization,
-            ProjectFeature.Newsletter,
-        ],
-        tech: [
-            ProjectTech.Webflow,
-        ],
-        roles: [
-            ProjectRole.Fullstack,
-            ProjectRole.ProjectManager,
-        ]
-    },
-    {
-        title: "SMART MRP",
-        imgSrc: smartWebsiteThumbnail,
-        description: "SMART is a shop management and resource tool that helps manufacturers and distributors manage their shop floor and resources.",
-        repoUrl: "https://github.com/JoshElias/smart-website",
-        url: "https://www.smartmrp.com",
-        publishDate: new Date("2017-05-12"),
-        type: ProjectType.Website,
-        features: [
-            ProjectFeature.VideoHosting,
-            ProjectFeature.Blog
-        ],
-        tech: [
-            ProjectTech.Angular2,
-            ProjectTech.AWS
-        ],
-        roles: [
-            ProjectRole.Fullstack,
-            ProjectRole.Design,
-            ProjectRole.ProjectManager
-        ]
-    },
+
     {
         title: "AVA Product Suite",
         imgSrc: autocorpThumbnail,
