@@ -1,6 +1,6 @@
 import { ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../../lib/types";
-import tempoWebsiteThumbnail from "@/public/images/tempo/tempo_website_thumbnail.jpg";
-import tempoMain from "@/public/images/tempo/tempo_legacy.jpg";
+import tempoWebsiteThumbnail from "@/public/images/tempo_website/tempo_website_thumbnail.jpg";
+import tempoMain from "@/public/images/tempo_website/tempo_legacy.jpg";
 
 
 export const title = "Tempostorm Website";

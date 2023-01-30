@@ -10,28 +10,6 @@ import daemonTechWebsiteThumbnail from "@/public/images/daemon_technology/daemon
 
 export default [
     {
-        title: "Deck Builder",
-        url: "https://tempostorm.com/hearthstone/sealed-generator",
-        description: "A deck builder for Hearthstone made for Redbull Tournaments.",
-        repoUrl: "https://github.com/JoshElias/esports-website",
-        imgSrc: tempoDraftThumbnail,
-        publishDate: new Date("2016-02-03"),
-        type: ProjectType.Game,
-        features: [
-            ProjectFeature.UserManagement,
-        ],
-        tech: [
-            ProjectTech.LoopbackJS,
-            ProjectTech.Angular1,
-            ProjectTech.MongoDB,
-            ProjectTech.NodeJS,
-            ProjectTech.Express,
-        ],
-        roles: [
-            ProjectRole.Backend,
-        ]
-    },
-    {
         title: "Spark Screens",
         url: "https://web.archive.org/web/20180218184619/http://sparkscreens.com/",
         description: "A kiosk platform built with Unity3D and Android Studio",
