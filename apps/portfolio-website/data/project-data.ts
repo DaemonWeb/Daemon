@@ -1,8 +1,6 @@
 import { Project, ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../lib/types";
 
 
-import autocorpThumbnail from "@/public/images/autocorp/autocorp_thumbnail.jpg";
-import clcWebsiteThumbnail from "@/public/images/clc_website/clc_website_thumbnail.jpg";
 import clcAppThumbnail from "@/public/images/clc_app/clc_app_thumbnail.jpg";
 import tempoWebsiteThumbnail from "@/public/images/tempo_website/tempo_website_thumbnail.jpg";
 import tempoDraftThumbnail from "@/public/images/tempo_draft/tempo_draft_thumbnail.jpg";
@@ -13,30 +11,7 @@ import daemonTechWebsiteThumbnail from "@/public/images/daemon_technology/daemon
 export default [
 
 
-    {
-        title: "Car Loans Canada",
-        url: "https://web.archive.org/web/20191007192100/https://www.carloanscanada.com/",
-        description: "Find out what vehicles you're eligible for today.",
-        imgSrc: clcWebsiteThumbnail,
-        publishDate: new Date("2018-03-15"),
-        type: ProjectType.Website,
-        features: [
-            ProjectFeature.CMS,
-            ProjectFeature.Blog,
-            ProjectFeature.LeadGen,
-            ProjectFeature.VideoHosting,
-        ],
-        tech: [
-            ProjectTech.Gatsby,
-            ProjectTech.React,
-        ],
-        roles: [
-            ProjectRole.Fullstack,
-            ProjectRole.Design,
-            ProjectRole.ProjectManager,
-            ProjectRole.ProductOwner,
-        ]
-    },
+    
     {
         title: "Car Loans Canada Credit Application",
         url: "https://apply.carloanscanada.com/",
