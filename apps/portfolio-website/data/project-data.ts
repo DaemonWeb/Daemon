@@ -13,28 +13,7 @@ export default [
 
     
     
-    {
-        title: "Daemon Technology",
-        url: "https://web.archive.org/web/20180822083745/https://daemontechnology.com/",
-        description: "My original company website with a little too much personality.",
-        imgSrc: daemonTechWebsiteThumbnail,
-        repoUrl: "https://github.com/JoshElias/daemon_technology_2018",
-        publishDate: new Date("2018-08-22"),
-        type: ProjectType.Website,
-        features: [
-            ProjectFeature.Portfolio,
-            ProjectFeature.LeadGen,
-        ],
-        tech: [
-            ProjectTech.Angular2,
-            ProjectTech.AWS,
-        ],
-        roles: [
-            ProjectRole.Fullstack,
-            ProjectRole.Design,
-        ]
-    },
-    {
+    
         title: "Tempostorm Website",
         url: "https://www.tempostorm.com/",
         description: "Tempostorm is a website for esports news and content.",
