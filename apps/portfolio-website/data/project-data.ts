@@ -12,28 +12,7 @@ export default [
 
 
     
-    {
-        title: "Car Loans Canada Credit Application",
-        url: "https://apply.carloanscanada.com/",
-        description: "A multi-step credit application for Car Loans Canada.",
-        imgSrc: clcAppThumbnail,
-        publishDate: new Date("2018-05-13"),
-        type: ProjectType.Website,
-        features: [
-            ProjectFeature.LeadGen,
-        ],
-        tech: [
-            ProjectTech.Gatsby,
-            ProjectTech.React,
-            ProjectTech.AWS,
-        ],
-        roles: [
-            ProjectRole.Fullstack,
-            ProjectRole.Design,
-            ProjectRole.ProjectManager,
-            ProjectRole.ProductOwner,
-        ]
-    },
+    
     {
         title: "Daemon Technology",
         url: "https://web.archive.org/web/20180822083745/https://daemontechnology.com/",
