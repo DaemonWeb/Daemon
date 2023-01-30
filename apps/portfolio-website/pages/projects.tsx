@@ -1,10 +1,11 @@
 import { ContentWrapper } from '@/components/ContentView'
 import Head from 'next/head'
-import { Project } from '@/lib/types';
-import projectData from "../data/project-data";
 import Image from 'next/image';
 import { combineClasses } from '@/lib/utils';
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
+import { Project } from '@/lib/types';
+import { getFormattedProjectsData } from '@/lib/projects';
 
 
 const columns = [
@@ -33,23 +34,20 @@ function formatDate(date: Date) {
         day: 'numeric',
     });
 }
-  
-function sortProjects(projects: Project[]) {
-    return projects.sort((a, b) => {
-        return b.publishDate.getTime() - a.publishDate.getTime();
-    });
+
+
+export const getStaticProps: GetStaticProps = async () => {
+    const projects = await getFormattedProjectsData();
+    return {
+        props: { projects }
+    }
 }
 
-const projects = sortProjects(projectData)
-    .map((project) => {
-        return {
-            ...project,
-            publishDate: formatDate(project.publishDate),
-        };
-    });
-
-
-export default function Projects() {
+export default function Projects({ 
+    projects
+}: {
+    projects: Project[]
+}) {
   return (
     <>
         <Head>
@@ -90,7 +88,7 @@ export default function Projects() {
                                                         <div className="h-10 w-10 flex-shrink-0">
                                                             <Image 
                                                                 className="h-10 w-auto rounded-full" 
-                                                                src={project.imgSrc} 
+                                                                src={project.thumbnailImg} 
                                                                 alt="Project Thumbnail"
                                                                 width={40}
                                                                 height={40} 
@@ -99,7 +97,7 @@ export default function Projects() {
                                                         </div>
                                                         <div className="mx-4 w-[calc(100%-56px)]">
                                                             <div className="font-medium text-gray-900">{project.title}</div>
-                                                            {project.url && 
+                                                            {project.liveUrl && 
                                                                 <div 
                                                                     className="
                                                                         text-gray-500
@@ -107,7 +105,7 @@ export default function Projects() {
                                                                         whitespace-nowrap
                                                                         text-ellipsis
                                                                     ">
-                                                                        {project.url}
+                                                                        {project.liveUrl}
                                                                     </div>
                                                             }
                                                         </div>
@@ -117,7 +115,7 @@ export default function Projects() {
                                             </td>
                                         
                                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                                <div className="text-gray-900">{project.publishDate}</div>
+                                                <div className="text-gray-900">{formatDate(project.publishDate)}</div>
                                             </td>
         
                                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
@@ -140,12 +138,12 @@ export default function Projects() {
                                             </td>
                                             <td className="relative whitespace-nowrap text-center py-4 pl-3 pr-4 text-sm font-medium sm:pr-6">
                                                 <a 
-                                                    href={project.url} 
+                                                    href={project.liveUrl} 
                                                     className="text-indigo-600 hover:text-indigo-900"
                                                     rel="noreferrer" 
                                                     target="_blank" 
                                                 >
-                                                    Visit<span className="sr-only">, {project.url}</span>
+                                                    Visit<span className="sr-only">, {project.liveUrl}</span>
                                                 </a>
                                             </td>
                                         </tr>

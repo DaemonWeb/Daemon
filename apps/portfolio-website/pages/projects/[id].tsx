@@ -1,14 +1,30 @@
-import { useRouter } from 'next/router';
-import projectData from '@/data/project-data';
 import ProjectDescription from '@/components/ProjectDescription';
 import ProjectHero from '@/components/ProjectHero';
 import ProjectGallery from '@/components/ProjectGallery';
+import { getProjectIds, getProjectData } from '@/lib/projects';
+import { Project } from '@/lib/types';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function Project() {
-    const router = useRouter();
-    const { id } = router.query;
-    const project = projectData.find((project) => project.id === id);
 
+export const getStaticPaths: GetStaticPaths = async() => {
+    const paths = await getProjectIds();
+    return { paths, fallback: false };
+}
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    const project = await getProjectData(params?.id as string);
+    return {
+        props: {
+            project,
+        }
+    }
+}
+
+export default function ProjectPage({ 
+    project 
+}:  { 
+    project: Project 
+}) {
     return (
         <>
             <ProjectHero />

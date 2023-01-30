@@ -10,3 +10,4 @@ export function slugify(name: string): string {
         .replace(/[\s_-]+/g, "-")
         .replace(/^-+|-+$/g, "");
 }
+

@@ -5,7 +5,7 @@ import { Project } from '@/lib/types';
 export default function ProjectDescription({
     project,
 }: {
-    project?: Project,
+    project: Project,
 }) {
   return (
     <div className="overflow-hidden bg-white shadow sm:rounded-lg">

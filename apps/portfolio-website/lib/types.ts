@@ -16,15 +16,17 @@ export type ActiveLinkProps = LinkProps & {
 export type Project = {
     id: string;
     title: string;
-    imgSrc: StaticImageData;
+    mainImg: StaticImageData;
+    thumbnailImg: StaticImageData;
     description: string;
     repoUrl?: string;
-    url: string;
+    liveUrl: string;
     publishDate: Date;
     type: ProjectType;
     features: ProjectFeature[];
     tech: ProjectTech[];
     roles: ProjectRole[];
+    gallery?: StaticImageData[];
 }
 
 export const enum ProjectType {
