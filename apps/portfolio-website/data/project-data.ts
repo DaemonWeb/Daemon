@@ -9,37 +9,6 @@ import daemonTechWebsiteThumbnail from "@/public/images/daemon_technology/daemon
 
 
 export default [
-
-
-    
-    
-    
-        title: "Tempostorm Website",
-        url: "https://www.tempostorm.com/",
-        description: "Tempostorm is a website for esports news and content.",
-        repoUrl: "https://github.com/JoshElias/esports-website",
-        imgSrc: tempoWebsiteThumbnail,
-        publishDate: new Date("2015-08-17"),
-        type: ProjectType.Website,
-        features: [
-            ProjectFeature.LeadGen,
-            ProjectFeature.UserManagement,
-            ProjectFeature.Newsletter,
-            ProjectFeature.CMS,
-            ProjectFeature.Blog,
-        ],
-        tech: [
-            ProjectTech.Angular1,
-            ProjectTech.LoopbackJS,
-            ProjectTech.MongoDB,
-            ProjectTech.NodeJS,
-            ProjectTech.Express,
-        ],
-        roles: [
-            ProjectRole.Backend,
-            ProjectRole.ProjectManager,
-        ]
-    },
     {
         title: "Deck Builder",
         url: "https://tempostorm.com/hearthstone/sealed-generator",
