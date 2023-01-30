@@ -1,6 +1,6 @@
 import { ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../../lib/types";
-import mainImage from "@/public/images/clc/clc_app_main.jpg";
-import clcAppThumbnail from "@/public/images/clc/clc_app_thumbnail.jpg";
+import mainImage from "@/public/images/clc_app/clc_app_main.jpg";
+import clcAppThumbnail from "@/public/images/clc_app/clc_app_thumbnail.jpg";
 import gallery1 from "@/public/images/clc_app/clc_app_gallery_1.jpg";
 
 

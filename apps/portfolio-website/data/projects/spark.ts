@@ -1,25 +1,31 @@
 import { ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../../lib/types";
-import muskokaWebsiteThumbnail from "@/public/images/muskoka/muskoka_website_thumbnail.jpg";
+import sparkMain from "@/public/images/spark/spark_website.jpg";
+import sparkThumbnail from "@/public/images/spark/spark_thumbnail.jpg";
 
-const project = {
-    title: "Muskoka Cabinet Company",
-    imgSrc: muskokaWebsiteThumbnail,
-    description: "A marketing website for a local cabinet making company.",
-    repoUrl: "https://github.com/JoshElias/muskoka-website_2022",
-    url: "https://www.muskokacabco.com",
-    publishDate: new Date("2022-07-12"),
-    type: ProjectType.Website,
-    features: [
-        ProjectFeature.CMS,
-        ProjectFeature.Blog
-    ],
-    tech: [
-        ProjectTech.Webflow,
-    ],
-    roles: [
-        ProjectRole.Fullstack,
-        ProjectRole.Design,
-    ]
-}
 
-export default project;
+export const title = "Spark Screens";
+export const liveUrl = "https://web.archive.org/web/20180218184619/http://sparkscreens.com/";
+export const description = "A kiosk platform built with Unity3D and Android Studio";
+export const repoUrl = "https://github.com/JoshElias/esports-website";
+export const mainImg = sparkMain;
+export const thumbnailImg = sparkThumbnail;
+export const publishDate = new Date("2012-01-17");
+export const type = ProjectType.Game;
+
+export const features = [
+    ProjectFeature.UserManagement,
+];
+
+export const tech = [
+    ProjectTech.LoopbackJS,
+    ProjectTech.Angular1,
+    ProjectTech.MongoDB,
+    ProjectTech.NodeJS,
+    ProjectTech.Express,
+];
+
+export const roles = [
+    ProjectRole.Backend,
+];
+
+export const gallery = [];
