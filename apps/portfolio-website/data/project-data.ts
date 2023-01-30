@@ -12,32 +12,7 @@ import daemonTechWebsiteThumbnail from "@/public/images/daemon_technology/daemon
 
 export default [
 
-    {
-        title: "AVA Product Suite",
-        imgSrc: autocorpThumbnail,
-        description: "Autocorp provides high converting commerce tools for forward thinking dealers that fast tracks your online deal & financing process.",
-        url: "https://www.autocorp.ai",
-        publishDate: new Date("2019-06-11"),
-        type: ProjectType.SaaS,
-        features: [
-            ProjectFeature.CMS,
-            ProjectFeature.LeadGen,
-            ProjectFeature.UserManagement,
-        ],
-        tech: [
-            ProjectTech.React,
-            ProjectTech.NextJS,
-            ProjectTech.Postgres,
-            ProjectTech.AWS,
-            ProjectTech.NodeJS,
-            ProjectTech.Express,
-            ProjectTech.Docker,
-        ],
-        roles: [
-            ProjectRole.ProjectManager,
-            ProjectRole.ProductOwner
-        ]
-    },
+
     {
         title: "Car Loans Canada",
         url: "https://web.archive.org/web/20191007192100/https://www.carloanscanada.com/",
