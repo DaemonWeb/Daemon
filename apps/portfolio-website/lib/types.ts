@@ -21,7 +21,7 @@ export type Project = {
     description: string;
     repoUrl?: string;
     liveUrl: string;
-    publishDate: Date;
+    publishDate: string;
     type: ProjectType;
     features: ProjectFeature[];
     tech: ProjectTech[];

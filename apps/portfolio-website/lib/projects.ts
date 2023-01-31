@@ -16,8 +16,8 @@ export async function getProjectIds(): Promise<{ params: { id: string; } }[]> {
 }   
 
 export async function getProjectData(id: string): Promise<Project> {
-    const projectPath = join(projectsDir, `${id}.ts`);
-    const projectData = await import(projectPath);
+    //const projectPath = join(projectsDir, `${id}.ts`); This import statement is too dynamic for SWC to handle
+    const projectData = await import(`../data/projects/${id}.ts`);
     return {
         id,
         ...projectData
@@ -31,12 +31,21 @@ export async function getFormattedProjectsData(): Promise<Project[]> {
                 const id = fileName.replace(/\.ts$/, '');
                 const projectData = await getProjectData(id)
                 return {
-                    ...projectData
+                    ...projectData,
+                    publishDate: formatDate(projectData.publishDate)
                 }
             })
         );
 
     return allProjectsData.sort((a, b) => {
-        return b.publishDate.getTime() - a.publishDate.getTime();
+        return new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime();
+    });
+}
+
+function formatDate(dateString: string): string {
+    return new Date(dateString).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
     });
 }

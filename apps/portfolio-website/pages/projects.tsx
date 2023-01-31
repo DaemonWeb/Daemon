@@ -27,15 +27,6 @@ const columns = [
     }
 ]
 
-function formatDate(date: Date) {
-    return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-    });
-}
-
-
 export const getStaticProps: GetStaticProps = async () => {
     const projects = await getFormattedProjectsData();
     return {

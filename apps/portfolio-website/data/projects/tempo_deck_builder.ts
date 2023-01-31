@@ -12,7 +12,7 @@ export const description = "A deck builder for Hearthstone made for Redbull Tour
 export const repoUrl = "https://github.com/JoshElias/esports-website";
 export const mainImg = draftMain;
 export const thumbnailImg = tempoThumbnail;
-export const publishDate = new Date("2016-02-03");
+export const publishDate = "2016-02-03";
 export const type = ProjectType.Game;
 
 export const features = [

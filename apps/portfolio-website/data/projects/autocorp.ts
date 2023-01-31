@@ -15,7 +15,7 @@ export const mainImg = autocorpMain;
 export const thumbnailImg = autocorpThumbnail;
 export const description = "Autocorp provides high converting commerce tools for forward thinking dealers that fast tracks your online deal & financing process.";
 export const liveUrl = "https://www.autocorp.ai";
-export const publishDate = new Date("2019-06-11");
+export const publishDate = "2019-06-11";
 export const type = ProjectType.SaaS;
 
 export const features = [

@@ -13,7 +13,7 @@ export const thumbnailImg = muskokaThumbnail;
 export const description = "A marketing website for a local cabinet making company.";
 export const repoUrl = "https://github.com/JoshElias/muskoka-website_2022";
 export const liveUrl = "https://www.muskokacabco.com";
-export const publishDate = new Date("2022-07-12");
+export const publishDate = "2022-07-12";
 export const type = ProjectType.Website;
 
 export const features = [

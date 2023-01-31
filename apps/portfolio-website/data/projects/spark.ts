@@ -9,7 +9,7 @@ export const description = "A kiosk platform built with Unity3D and Android Stud
 export const repoUrl = "https://github.com/JoshElias/esports-website";
 export const mainImg = sparkMain;
 export const thumbnailImg = sparkThumbnail;
-export const publishDate = new Date("2012-01-17");
+export const publishDate = "2012-01-17";
 export const type = ProjectType.Game;
 
 export const features = [

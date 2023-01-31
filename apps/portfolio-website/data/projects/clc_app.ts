@@ -9,7 +9,7 @@ export const liveUrl = "https://apply.carloanscanada.com/";
 export const description = "A multi-step credit application for Car Loans Canada.";
 export const mainImg = mainImage;
 export const thumbnailImg = clcAppThumbnail;
-export const publishDate = new Date("2018-05-13");
+export const publishDate = "2018-05-13";
 export const type = ProjectType.Website;
 
 export const features = [

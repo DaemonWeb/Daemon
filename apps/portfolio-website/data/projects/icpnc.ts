@@ -12,7 +12,7 @@ export const mainImg = icpncMain;
 export const thumbnailImg = icpncThumbnail;
 export const description = "The ICPNC brings together leading practitioners in child protection to enhance Canadian organizations’ capacity to ensure results-oriented, innovative and effective child protection programming.";
 export const liveUrl = "https://www.icpnc.org";
-export const publishDate = new Date("2020-10-05");
+export const publishDate = "2020-10-05";
 export const type = ProjectType.Website;
 
 export const features = [

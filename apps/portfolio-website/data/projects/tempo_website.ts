@@ -9,7 +9,7 @@ export const liveUrl = "https://www.tempostorm.com/";
 export const description = "Tempostorm is a website for esports news and content.";
 export const repoUrl = "https://github.com/JoshElias/esports-website";
 export const thumbnailImg = tempoWebsiteThumbnail;
-export const publishDate = new Date("2015-08-17");
+export const publishDate = "2015-08-17";
 export const type = ProjectType.Website;
 
 export const features = [

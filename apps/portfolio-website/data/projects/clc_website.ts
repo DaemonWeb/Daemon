@@ -10,7 +10,7 @@ export const liveUrl = "https://web.archive.org/web/20191007192100/https://www.c
 export const description = "Find out what vehicles you're eligible for today.";
 export const mainImg = mainImage;
 export const thumbnailImg = clcWebsiteThumbnail;
-export const publishDate = new Date("2018-03-15");
+export const publishDate = "2018-03-15";
 export const type = ProjectType.Website;
 
 export const features = [
