@@ -12,7 +12,7 @@ export default function SideNav({
     navOptions: NavOptionInput[]
 }) {
     return (
-        <div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
+        <div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col z-10">
 
             <div className="flex min-h-0 flex-1 flex-col bg-indigo-700">
                 <div className="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
