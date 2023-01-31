@@ -1,6 +1,7 @@
 import { readdir } from 'fs/promises';
 import { join } from 'path';
 import { Project } from './types';
+import { formatDate } from './utils';
 
 
 const projectsDir = join(process.cwd(), 'data', 'projects');
@@ -20,7 +21,8 @@ export async function getProjectData(id: string): Promise<Project> {
     const projectData = await import(`../data/projects/${id}.ts`);
     return {
         id,
-        ...projectData
+        ...projectData,
+        publishDate: formatDate(projectData.publishDate)
     }
 }
 
@@ -42,10 +44,3 @@ export async function getFormattedProjectsData(): Promise<Project[]> {
     });
 }
 
-function formatDate(dateString: string): string {
-    return new Date(dateString).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-    });
-}

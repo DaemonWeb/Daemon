@@ -11,3 +11,14 @@ export function slugify(name: string): string {
         .replace(/^-+|-+$/g, "");
 }
 
+export function isEven(n: number) {
+    return n % 2 === 0;
+}
+
+export function formatDate(dateString: string): string {
+    return new Date(dateString).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+}

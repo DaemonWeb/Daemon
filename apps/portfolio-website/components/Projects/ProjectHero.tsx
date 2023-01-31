@@ -1,35 +1,52 @@
-export default function ProjectHero() {
+import Image from "next/image";
+import { Project } from "@/lib/types";
+
+export default function ProjectHero({
+  project,
+}: {
+  project: Project
+}
+) {
   return (
     <div className="relative py-16 lg:pb-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Data to enrich your online business
+            {project.title}
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
+            {project.description}
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="#"
+              href={project.liveUrl}
               className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              rel="noreferrer"
+              target="_blank"
             >
-              Get started
+              Visit Website
             </a>
-            <a href="#" className="text-base font-semibold leading-7 text-gray-900">
-              Learn more <span aria-hidden="true">→</span>
-            </a>
+            {project.repoUrl && (
+              <a 
+                href={project.repoUrl}
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-base font-semibold leading-7 text-gray-900">
+                View on Github <span aria-hidden="true">→</span>
+              </a>
+            )}
+            
           </div>
         </div>
         <div className="mt-16 flow-root sm:mt-24">
           <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-            <img
-              src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-              alt="App screenshot"
-              width={2432}
-              height={1442}
+            <Image
+              src={project.mainImg}
+              alt={`Screenshot of ${project.title}`}
+              width={1920}
+              height={1080}
               className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
+              priority={true}
             />
           </div>
         </div>

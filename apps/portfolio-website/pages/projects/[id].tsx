@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const project = await getProjectData(params?.id as string);
     return {
         props: {
-            project,
+            project
         }
     }
 }
@@ -27,8 +27,8 @@ export default function ProjectPage({
 }) {
     return (
         <>
-            <ProjectHero />
-            <ProjectDescription project={project} />
+            <ProjectHero project={project}/>
+            <ProjectDescription project={project}/>
             <ProjectGallery />
         </>
     );
