@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import { ContentWrapper } from '@/components/ContentView'
-import HomeHero from '@/components/HomeHero'
-import FeatureSection from '@/components/FeatureSection'
+import HomeHero from '@/components/Home/HomeHero'
+import FeatureSection from '@/components/Home/FeatureSection'
 
 
 export default function Home() {

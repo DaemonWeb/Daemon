@@ -1,6 +1,6 @@
-import ProjectDescription from '@/components/ProjectDescription';
-import ProjectHero from '@/components/ProjectHero';
-import ProjectGallery from '@/components/ProjectGallery';
+import ProjectDescription from '@/components/Projects/ProjectDescription';
+import ProjectHero from '@/components/Projects/ProjectHero';
+import ProjectGallery from '@/components/Projects/ProjectGallery';
 import { getProjectIds, getProjectData } from '@/lib/projects';
 import { Project } from '@/lib/types';
 import { GetStaticPaths, GetStaticProps } from 'next';
