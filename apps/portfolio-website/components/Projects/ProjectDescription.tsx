@@ -2,11 +2,11 @@ import { PaperClipIcon } from '@heroicons/react/20/solid';
 import { Project } from '@/lib/types';
 
 
-export default function ProjectDescription({
+export default function ProjectDescription(/*{
     project,
 }: {
     project: Project,
-}) {
+}*/) {
   return (
     <div className="overflow-hidden bg-white shadow sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">

@@ -1,7 +1,4 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid';
-import Image from 'next/image';
-import daemonLogo from '@/public/images/daemon_logo.svg';
-import CodeExample from './CodeExample';
+import CodeExample from '@/components/Home/CodeExample';
 
 export default function HomeHero() {
     return (
