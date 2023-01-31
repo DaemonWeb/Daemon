@@ -115,7 +115,7 @@ export default function Projects({
                                                         href={project.repoUrl} 
                                                         rel="noreferrer" 
                                                         target="_blank" 
-                                                        className="text-indigo-600 hover:text-indigo-900 disabled:opacity-75"
+                                                        className={project.repoUrl ? "" : "opacity-20"}
                                                     >
                                                         <Image 
                                                             className="h-9 w-auto" 
