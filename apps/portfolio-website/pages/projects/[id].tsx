@@ -29,7 +29,9 @@ export default function ProjectPage({
         <>
             <ProjectHero project={project}/>
             <ProjectDescription project={project}/>
-            <ProjectGallery />
+            {project.gallery &&
+                <ProjectGallery images={project.gallery}/>
+            }
         </>
     );
 }
