@@ -67,10 +67,10 @@ export const enum ProjectTech {
 }
 
 export const enum ProjectRole {
-    Frontend = "Frontend",
-    Backend = "Backend",
-    Fullstack = "Fullstack",
-    Design = "Design",
+    Frontend = "Frontend Developer",
+    Backend = "Backend Developer",
+    Fullstack = "Fullstack Developer",
+    Design = "Designer",
     ProjectManager = "Project Manager",
     QA = "QA",
     DevOps = "DevOps",
