@@ -1,4 +1,5 @@
 import CodeExample from '@/components/Home/CodeExample';
+import { Title, TitleDescription } from '../Elements';
 
 export default function HomeHero() {
     return (
@@ -8,12 +9,12 @@ export default function HomeHero() {
                     <div className="px-6 lg:px-0 lg:pt-4">
                         <div className="mx-auto max-w-2xl">
                             <div className="max-w-lg">
-                                <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                                <Title className='mt-10'>
                                     Modern Web services for a Modern Business
-                                </h1>
-                                <p className="mt-6 text-lg leading-8 text-gray-600">
+                                </Title>
+                                <TitleDescription>
                                     We&apos;ll design, develop and manage software for your project. From tiny web apps to whole systems. Our job is to make things simpler for you!
-                                </p>
+                                </TitleDescription>
                                 <div className="mt-10 flex items-center gap-x-6">
                                     <a
                                         href="#"

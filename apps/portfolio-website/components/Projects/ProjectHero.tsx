@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Project } from "@/lib/types";
+import { Title, TitleDescription, TitleSection } from "../Elements";
+
 
 export default function ProjectHero({
   project,
@@ -8,15 +10,14 @@ export default function ProjectHero({
 }
 ) {
   return (
-    <div className="relative py-16 lg:pb-40">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+    <>
+        <TitleSection>
+          <Title>
             {project.title}
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          </Title>
+          <TitleDescription className="py-6">
             {project.description}
-          </p>
+          </TitleDescription>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href={project.liveUrl}
@@ -34,10 +35,9 @@ export default function ProjectHero({
                 className="text-base font-semibold leading-7 text-gray-900">
                 View on Github <span aria-hidden="true">→</span>
               </a>
-            )}
-            
+            )}  
           </div>
-        </div>
+        </TitleSection>
         <div className="mt-16 flow-root sm:mt-24">
           <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
             <Image
@@ -50,7 +50,6 @@ export default function ProjectHero({
             />
           </div>
         </div>
-      </div>
       <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
         <svg
           className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
@@ -76,6 +75,6 @@ export default function ProjectHero({
           </defs>
         </svg>
       </div>
-    </div>
+    </>
   )
 }

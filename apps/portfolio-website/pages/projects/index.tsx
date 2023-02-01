@@ -1,4 +1,4 @@
-import { ContentWrapper } from '@/components/ContentView'
+import { ContentContainer } from '@/components/ContentView'
 import Head from 'next/head'
 import Image from 'next/image';
 import { combineClasses } from '@/lib/utils';
@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import { Project } from '@/lib/types';
 import { getFormattedProjectsData } from '@/lib/projects';
+import { Title, TitleDescription, TitleSection } from '@/components/Elements';
 
 
 const columns = [
@@ -45,7 +46,17 @@ export default function Projects({
             <title>Projects - Daemon Web Tools</title>
             <meta name="description" content="Projects for Daemon Web Tools" />
         </Head>
-        <ContentWrapper title="Projects">
+        <ContentContainer>
+            <TitleSection>
+                <Title>
+                    Projects
+                </Title>
+                <TitleDescription className='py-6'>
+                    I&apos;ve been building websites and apps for over 10 years. Here are some of my favorite projects, big and small. I invite you to explore the live products and the source code where possible.
+                    <br /><br />
+                    Most include the source code but some include proprietary code that must remain private.
+                </TitleDescription>
+            </TitleSection>
             <div className="mt-8 flex flex-col">
                 <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
@@ -145,7 +156,7 @@ export default function Projects({
                     </div>
                 </div>
             </div>
-        </ContentWrapper>
+        </ContentContainer>
     </>
   )
 }

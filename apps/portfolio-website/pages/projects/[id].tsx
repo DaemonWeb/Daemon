@@ -4,6 +4,7 @@ import ProjectGallery from '@/components/Projects/ProjectGallery';
 import { getProjectIds, getProjectData } from '@/lib/projects';
 import { Project } from '@/lib/types';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { ContentContainer } from '@/components/ContentView';
 
 
 export const getStaticPaths: GetStaticPaths = async() => {
@@ -26,12 +27,12 @@ export default function ProjectPage({
     project: Project 
 }) {
     return (
-        <>
+        <ContentContainer>
             <ProjectHero project={project}/>
             <ProjectDescription project={project}/>
             {project.gallery &&
                 <ProjectGallery images={project.gallery}/>
             }
-        </>
+        </ContentContainer>
     );
 }
