@@ -1,8 +1,7 @@
 import { ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../../lib/types";
 import mainImage from "@/public/images/clc_website/clc_website_main.jpg";
 import clcWebsiteThumbnail from "@/public/images/clc_website/clc_website_thumbnail.jpg";
-import gallery1 from "@/public/images/clc_website/clc_website_gallery_1.jpg";
-import gallery2 from "@/public/images/clc_website/clc_website_gallery_2.jpg";
+import homeGallery from "@/public/images/clc_website/clc_website_home_gallery.jpg";
 
 
 export const title = "Car Loans Canada";
@@ -33,6 +32,5 @@ export const roles = [
 ];
 
 export const gallery = [
-    gallery1,
-    gallery2,
+    homeGallery,
 ];
