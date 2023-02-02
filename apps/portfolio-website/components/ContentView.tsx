@@ -38,8 +38,8 @@ export function ContentContainer({
     children: React.ReactNode,
 }) {
     return (
-        <main className="container py-16">
+        <div className="container py-16">
                 {children}
-        </main>
+        </div>
     )
 }
