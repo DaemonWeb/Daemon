@@ -95,6 +95,7 @@ importers:
       prettier-plugin-tailwindcss: ^0.2.2
       react: ^18.2.0
       react-dom: 18.2.0
+      react-plock: ^2.0.0
       tailwindcss: ^3.2.4
       typescript: 4.9.4
     dependencies:
@@ -108,6 +109,7 @@ importers:
       next: 13.1.5_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      react-plock: 2.0.0_react@18.2.0
       typescript: 4.9.4
     devDependencies:
       '@typescript-eslint/parser': 5.50.0_yfqovispp7u7jaktymfaqwl2py
@@ -7324,6 +7326,14 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-plock/2.0.0_react@18.2.0:
+    resolution: {integrity: sha512-m3ByNGVixwmSTRiz+50kyDzy+Ccj9mODOFqh+f/gTnmb7OLYErsF6cEWK1fgc3hifMJGte5SLtCGPSIoP/k5hA==}
+    peerDependencies:
+      react: 18.1.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react/18.2.0:
