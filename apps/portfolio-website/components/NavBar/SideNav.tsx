@@ -27,9 +27,7 @@ export default function SideNav({
                         {navOptions.map((option) => (
                             <NavOption
                                 key={option.title}
-                                title={option.title}
-                                href={option.href}
-                                icon={option.icon}
+                                {...option}
                             />
                         ))}
                     </nav>

@@ -14,10 +14,10 @@ import ContentView from './ContentView';
 
 const navOptions: NavOptionInput[] = [
   { title: 'Home', href: '/', icon: HomeIcon },
-  { title: 'Services', href: '/services', icon: BriefcaseIcon },
   { title: 'Projects', href: '/projects', icon: FolderIcon },
-  { title: 'Skills', href: '/skills', icon: CommandLineIcon },
   { title: 'Resume', href: '/resume', icon: ClipboardIcon },
+  { title: 'Skills', href: '/skills', icon: CommandLineIcon, disabled: true},
+  { title: 'Services', href: '/services', icon: BriefcaseIcon, disabled: true },
 ]
 
 export default function Layout({ 

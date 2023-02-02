@@ -59,9 +59,7 @@ export default function MobileNav({
                                     {navOptions.map((option) => (
                                         <NavOption
                                             key={option.title}
-                                            title={option.title}
-                                            href={option.href}
-                                            icon={option.icon}
+                                            {...option}
                                         />
                                     ))}
                                 </nav>

@@ -8,6 +8,7 @@ export default function NavOption(
     return (
         <ActiveLink
             href={props.href}
+            disabled={props.disabled}
             className="group flex items-center px-2 py-2 text-sm font-medium rounded-md"
             activeClassName="bg-indigo-800 text-white"
             inactiveClassName="text-indigo-100 hover:bg-indigo-600 hover:bg-opacity-75"
