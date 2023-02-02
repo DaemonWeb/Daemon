@@ -5,12 +5,14 @@ export type NavOptionInput = {
     title: string,
     href: string,
     icon: any,
+    disabled?: boolean
 }
 
 export type ActiveLinkProps = LinkProps & {
     className?: string
     activeClassName?: string
-    inactiveClassName?: string
+    inactiveClassName?: string,
+    disabled?: boolean
 }
 
 export type Project = {

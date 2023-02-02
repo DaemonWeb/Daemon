@@ -10,12 +10,29 @@ export default function ActiveLink({
     className = "",
     activeClassName = "",
     inactiveClassName = "",
+    disabled = false,
     ...props
 }: PropsWithChildren<ActiveLinkProps>) {
     const { asPath, isReady } = useRouter();
     const [computedClassName, setComputedClassName] = useState(className);
 
     useEffect(() => {
+        // Check if the input is disabled
+        // If so, no need to check for active class
+        if (disabled) {
+            const newClassName = combineClasses(
+                className, 
+                inactiveClassName,
+                "pointer-events-none opacity-40"
+            );
+
+            if(newClassName !== computedClassName) {
+                setComputedClassName(newClassName);
+            }
+          
+          return;
+        }
+
         // Check if the router fields are updated client-side and ready for use
         if (!isReady) {
             return;
@@ -51,7 +68,8 @@ export default function ActiveLink({
         className,
         activeClassName,
         inactiveClassName,
-        computedClassName
+        computedClassName,
+        disabled
     ])
 
     return (
