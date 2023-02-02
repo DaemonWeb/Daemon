@@ -1,4 +1,5 @@
 import CodeExample from '@/components/Home/CodeExample';
+import Link from 'next/link';
 import { Title, TitleDescription } from '../Elements';
 
 export default function HomeHero() {
@@ -16,12 +17,12 @@ export default function HomeHero() {
                                     We&apos;ll design, develop and manage software for your project. From tiny web apps to whole systems. Our job is to make things simpler for you!
                                 </TitleDescription>
                                 <div className="mt-10 flex items-center gap-x-6">
-                                    <a
-                                        href="#"
+                                    <Link
+                                        href="/projects"
                                         className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                     >
-                                        Documentation
-                                    </a>
+                                        Explore Projects
+                                    </Link>
                                     <a href="#" className="text-base font-semibold leading-7 text-gray-900">
                                         View on GitHub <span aria-hidden="true">→</span>
                                     </a>
