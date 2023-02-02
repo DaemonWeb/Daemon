@@ -1,10 +1,11 @@
 import { ProjectFeature, ProjectRole, ProjectTech, ProjectType } from "../../lib/types";
 import muskokaThumbnail from "@/public/images/muskoka/muskoka_website_thumbnail.jpg";
 import muskokaMainImg from "@/public/images/muskoka/muskoka_main.jpg";
-import gallery1 from "@/public/images/muskoka/muskoka_gallery_1.jpg";
-import gallery2 from "@/public/images/muskoka/muskoka_gallery_2.jpg";
-import gallery3 from "@/public/images/muskoka/muskoka_gallery_3.jpg";
-import gallery4 from "@/public/images/muskoka/muskoka_gallery_4.jpg";
+import homeGallery from "@/public/images/muskoka/muskoka_home_gallery.jpg";
+import productsGallery from "@/public/images/muskoka/muskoka_products_gallery.jpg";
+import inspirationGallery from "@/public/images/muskoka/muskoka_inspiration_gallery.jpg";
+import dealersGallery from "@/public/images/muskoka/muskoka_dealers_gallery.jpg";
+import aboutGallery from "@/public/images/muskoka/muskoka_about_gallery.jpg";
 
 
 export const title = "Muskoka Cabinet Company";
@@ -31,8 +32,9 @@ export const roles = [
 ];
 
 export const gallery = [
-    gallery1,
-    gallery2,
-    gallery3,
-    gallery4,
+    homeGallery,
+    productsGallery,
+    inspirationGallery,
+    dealersGallery,
+    aboutGallery,
 ];
