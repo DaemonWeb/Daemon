@@ -60,6 +60,7 @@ export default function MobileNav({
                                         <NavOption
                                             key={option.title}
                                             {...option}
+                                            onClick={() => setIsOpen(false)}
                                         />
                                     ))}
                                 </nav>
