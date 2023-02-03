@@ -1,5 +1,6 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/20/solid';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
+import { Profile, ProfileFields } from '@/lib/types';
 import joshPic from '@/public/images/joshy.jpg';
 import mistyMountains from '@/public/images/misty-mountains-sunrise.jpg';
 import githubLogo from '@/public/images/social/github_logo.svg';
@@ -8,28 +9,6 @@ import twitterLogo from '@/public/images/social/twitter_logo.svg';
 import facebookLogo from '@/public/images/social/facebook_logo.svg';
 import discordLogo from '@/public/images/social/discord_logo.svg';
 
-
-type Profile = {
-    name: string,
-    about: string,
-    fields: ProfileFields,
-    social: SocialLink[],
-}
-
-type ProfileFields = {
-    'Phone': string,
-    'Email': string,
-    'Title': string,
-    'Location': string,
-    'Birthday': string,
-    'Hobbies': string,
-}
-
-type SocialLink = {
-    icon: StaticImageData,
-    url: string,
-    alt: string,
-}
 
 const profile: Profile = {
     name: 'Josh Elias',
@@ -76,7 +55,7 @@ const profile: Profile = {
     ]
 }
 
-export default function Profile() {
+export default function ProfilePage() {
   return (
     <div className="relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last">
         <div>
@@ -96,20 +75,20 @@ export default function Profile() {
                         <h1 className="truncate text-2xl font-bold text-gray-900">{profile.name}</h1>
                     </div>
                     <div className="justify-stretch mt-6 flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
-                        <button
-                            type="button"
+                        <a
+                            href={`mailto: ${profile.fields.Email}`}
                             className="inline-flex justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
                         >
                             <EnvelopeIcon className="-ml-1 mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
                             <span>Message</span>
-                        </button>
-                        <button
-                            type="button"
+                        </a>
+                        <a
+                            href={`tel: ${profile.fields.Phone}`}
                             className="inline-flex justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
                         >
                             <PhoneIcon className="-ml-1 mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
                             <span>Call</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

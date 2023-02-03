@@ -79,3 +79,25 @@ export const enum ProjectRole {
     DevOps = "DevOps",
     ProductOwner = "Product Owner",
 }
+
+export type Profile = {
+    name: string,
+    about: string,
+    fields: ProfileFields,
+    social: SocialLink[],
+}
+
+export type ProfileFields = {
+    'Phone': string,
+    'Email': string,
+    'Title': string,
+    'Location': string,
+    'Birthday': string,
+    'Hobbies': string,
+}
+
+export type SocialLink = {
+    icon: StaticImageData,
+    url: string,
+    alt: string,
+}
