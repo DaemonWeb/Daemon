@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { combineClasses } from '@/lib/utils';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
+import githubLogo from '@/public/images/social/github_logo.svg';
 import { Project } from '@/lib/types';
 import { getFormattedProjectsData } from '@/lib/projects';
 import { Title, TitleDescription, TitleSection } from '@/components/Elements';
@@ -16,7 +17,7 @@ const columns = [
     },
     {
         title: "Published",
-        classNames: "px-3 w-40"
+        classNames: "px-3 w-40 hidden sm:table-cell md:hidden lg:table-cell"
     },
     {
         title: "Source",
@@ -116,7 +117,10 @@ export default function Projects({
                                                 </Link>    
                                             </td>
                                         
-                                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                            <td className="
+                                                whitespace-nowrap px-3 py-4 text-sm text-gray-500 
+                                                hidden sm:table-cell md:hidden lg:table-cell
+                                            ">
                                                 <div className="text-gray-900">{project.publishDate}</div>
                                             </td>
         
@@ -130,7 +134,7 @@ export default function Projects({
                                                     >
                                                         <Image 
                                                             className="h-9 w-auto" 
-                                                            src="/images/github_logo.svg"
+                                                            src={githubLogo}
                                                             alt="Github Logo"
                                                             width={32}
                                                             height={32}
