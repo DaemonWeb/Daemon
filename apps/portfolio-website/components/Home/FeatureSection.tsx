@@ -1,4 +1,9 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { 
+  CreditCardIcon, 
+  CloudArrowUpIcon, 
+  DevicePhoneMobileIcon, 
+  WrenchScrewdriverIcon
+} from '@heroicons/react/24/outline'
 import { SubTitle, TitleDescription } from '../Elements'
 
 const features = [
@@ -6,25 +11,25 @@ const features = [
     name: 'Web/App Development',
     description:
       'We build web and mobile apps for startups and enterprises. We can help you build your MVP or scale your business.',
-    icon: CloudArrowUpIcon,
+    icon: DevicePhoneMobileIcon,
   },
   {
     name: 'Web Hosting',
     description:
       'Let us help you focus on your product, not your infrastructure. We offer a variety of hosting options to fit your needs.',
-    icon: LockClosedIcon,
+    icon: CloudArrowUpIcon,
   },
   {
     name: 'Web Maintenance',
     description:
       'We can help you maintain your website or app. We can help you with updates, bug fixes, and more.',
-    icon: ArrowPathIcon,
+    icon: WrenchScrewdriverIcon,
   },
   {
     name: 'Ecommerce',
     description:
       'We can help you build your online store. We can help you with everything from design to development to marketing.',
-    icon: FingerPrintIcon,
+    icon: CreditCardIcon,
   },
 ]
 
