@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
 import { ContentContainer } from '@/components/ContentView';
+import Head from 'next/head';
 
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -19,13 +20,18 @@ export default function Resume({
     resume: string
 }) {
     return ( 
-        <ContentContainer>
-            <div className="prose lg:prose-xl">
-                <ReactMarkdown>
-                    {resume}
-                </ReactMarkdown>  
-            </div>
-        </ContentContainer>
-        
+        <>
+            <Head>
+                <title>Resume - Daemon Web Tools</title>
+                <meta name="description" content="Resume for Josh Elias" />
+            </Head>
+            <ContentContainer>
+                <div className="prose lg:prose-xl">
+                    <ReactMarkdown>
+                        {resume}
+                    </ReactMarkdown>  
+                </div>
+            </ContentContainer>
+        </>
     );
 }
