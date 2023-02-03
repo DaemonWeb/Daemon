@@ -17,15 +17,15 @@ const columns = [
     },
     {
         title: "Published",
-        classNames: "px-3 w-40 hidden sm:table-cell md:hidden lg:table-cell"
+        classNames: "px-3 w-32 lg:w-40 hidden sm:table-cell md:hidden lg:table-cell"
     },
     {
         title: "Source",
-        classNames: "px-3 text-center w-24"
+        classNames: "px-3 text-center w-16 md:w-20"
     },
     {
         title: "",
-        classNames: "px-3 w-24"
+        classNames: "px-3 w-16 md:w-20"
     }
 ]
 
