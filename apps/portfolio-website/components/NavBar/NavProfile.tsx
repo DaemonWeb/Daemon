@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 
 export default function NavProfile({
@@ -12,7 +13,10 @@ export default function NavProfile({
 }) {
     return (
         <div className="flex flex-shrink-0 border-t border-indigo-800 p-4">
-            <a href="#" className="group block w-full flex-shrink-0">
+            <Link 
+                href="/profile" 
+                className="group block w-full flex-shrink-0"
+            >
                 <div className="flex items-center">
                     <div>
                         <Image
@@ -30,7 +34,7 @@ export default function NavProfile({
                         </p>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 }

@@ -12,7 +12,8 @@ export type ActiveLinkProps = LinkProps & {
     className?: string
     activeClassName?: string
     inactiveClassName?: string,
-    disabled?: boolean
+    disabled?: boolean,
+    onClick?: () => void
 }
 
 export type Project = {

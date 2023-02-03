@@ -73,7 +73,10 @@ export default function ActiveLink({
     ])
 
     return (
-        <Link className={computedClassName} {...props}>
+        <Link 
+            className={computedClassName}
+            {...props}
+        >
             {children}
         </Link>
     );
