@@ -4,7 +4,7 @@ import clcAppThumbnail from "@/public/images/clc_app/clc_app_thumbnail.jpg";
 import gallery1 from "@/public/images/clc_app/clc_app_gallery_1.jpg";
 
 
-export const title = "Car Loans Canada Credit Application";
+export const title = "CLC Application";
 export const liveUrl = "https://apply.carloanscanada.com/";
 export const description = "A multi-step credit application for Car Loans Canada.";
 export const mainImg = mainImage;
