@@ -3,27 +3,27 @@ import { SubTitle, TitleDescription } from '../Elements'
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Web/App Development',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'We build web and mobile apps for startups and enterprises. We can help you build your MVP or scale your business.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Web Hosting',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'Let us help you focus on your product, not your infrastructure. We offer a variety of hosting options to fit your needs.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Web Maintenance',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'We can help you maintain your website or app. We can help you with updates, bug fixes, and more.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Ecommerce',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'We can help you build your online store. We can help you with everything from design to development to marketing.',
     icon: FingerPrintIcon,
   },
 ]
@@ -33,13 +33,12 @@ export default function FeatureSection() {
     <div className="bg-white py-12 md:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Deploy faster</h2>
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Get it done!</h2>
           <SubTitle>
             Everything you need to deploy your app
           </SubTitle>
           <TitleDescription>
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          We know you&apos;ve done all the hard work, finding the right product for your target market and making sure it&apos;s ready for launch. Now it&apos;s time to let us help you reach that audience and give them the best possible experience.
           </TitleDescription>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

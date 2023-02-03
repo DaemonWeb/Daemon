@@ -14,7 +14,7 @@ export default function HomeHero() {
                                     Modern Web services for a Modern Business
                                 </Title>
                                 <TitleDescription>
-                                    We&apos;ll design, develop and manage software for your project. From tiny web apps to whole systems. Our job is to make things simpler for you!
+                                    We&apos;ll design, develop and manage software for your product. From tiny web apps to whole systems. Our job is to make things simpler for you!
                                 </TitleDescription>
                                 <div className="mt-10 flex items-center gap-x-6">
                                     <Link
