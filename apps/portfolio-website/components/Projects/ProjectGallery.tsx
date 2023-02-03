@@ -16,8 +16,8 @@ export default function ProjectGallery({
     return (
         <Plock 
           breakpoints={breakpoints}
-          debounce={100}
-          gap="1rem"
+          debounce={0}
+          gap="0.5rem"
         >
           {images.map((image, i) => (
             <div key={i} className="relative mb-4 before:content-[''] before:rounded-md">
@@ -27,6 +27,7 @@ export default function ProjectGallery({
                 src={image}
                 width={300}
                 height={169}
+                placeholder="blur"
               /> 
             </div>    
           ))}
