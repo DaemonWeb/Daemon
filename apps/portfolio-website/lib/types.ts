@@ -4,7 +4,7 @@ import { LinkProps } from "next/link";
 export type NavOptionInput = {
     title: string,
     href: string,
-    icon: any,
+    icon: Heroicon,
     disabled?: boolean
 }
 
@@ -101,3 +101,8 @@ export type SocialLink = {
     url: string,
     alt: string,
 }
+
+export type Heroicon = React.ForwardRefExoticComponent<React.SVGProps<SVGSVGElement> & {
+    title?: string | undefined;
+    titleId?: string | undefined;
+}>
