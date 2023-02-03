@@ -38,7 +38,7 @@ export function ContentContainer({
     children: React.ReactNode,
 }) {
     return (
-        <div className="container py-16">
+        <div className="container py-4 md:py-16">
                 {children}
         </div>
     )

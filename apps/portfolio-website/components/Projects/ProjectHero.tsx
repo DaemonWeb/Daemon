@@ -32,7 +32,8 @@ export default function ProjectHero({
                 href={project.repoUrl}
                 target="_blank" 
                 rel="noreferrer" 
-                className="text-base font-semibold leading-7 text-gray-900">
+                className="text-base font-semibold leading-7 text-gray-900"
+              >
                 View on Github <span aria-hidden="true">→</span>
               </a>
             )}  
@@ -47,6 +48,7 @@ export default function ProjectHero({
               height={1080}
               className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
               priority={true}
+              placeholder="blur"
             />
           </div>
         </div>

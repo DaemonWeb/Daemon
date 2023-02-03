@@ -6,7 +6,7 @@ export default function HomeHero() {
     return (
         <div className="bg-white">
             <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
-                <div className="mx-auto max-w-7xl pt-10 pb-24 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-20 lg:px-8">
+                <div className="mx-auto max-w-7xl sm:pt-10 sm:pb-8 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-20 lg:px-8">
                     <div className="px-6 lg:px-0 lg:pt-4">
                         <div className="mx-auto max-w-2xl">
                             <div className="max-w-lg">
