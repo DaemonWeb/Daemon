@@ -2,7 +2,6 @@ import '@/styles/globals.css';
 import { Nunito } from '@next/font/google';
 import type { AppProps } from 'next/app';
 import Layout from '@/components/Layout';
-import Modal from '@/components/Modal';
 
 
 const nunito = Nunito({subsets: ["latin"]});

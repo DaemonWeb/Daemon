@@ -1,4 +1,3 @@
-import { PaperClipIcon } from '@heroicons/react/20/solid';
 import { isEven } from '@/lib/utils';
 import { Project } from '@/lib/types';
 import Badge from '../Badge';
