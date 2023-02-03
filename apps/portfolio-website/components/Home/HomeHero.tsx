@@ -23,7 +23,11 @@ export default function HomeHero() {
                                     >
                                         Explore Projects
                                     </Link>
-                                    <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                                    <a 
+                                        href="https://github.com/daemonweb/daemon" 
+                                        target='_blank'
+                                        rel="noreferrer"
+                                        className="text-base font-semibold leading-7 text-gray-900">
                                         View on GitHub <span aria-hidden="true">→</span>
                                     </a>
                                 </div>
