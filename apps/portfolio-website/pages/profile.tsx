@@ -64,9 +64,7 @@ export default function ProfilePage() {
             <meta name="description" content="Profile for Josh Elias" />
         </Head>
         <div className="relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last">
-            <div>
-                <Image className="h-32 w-full object-cover object-top lg:h-48" src={mistyMountains} alt="Profile background" />
-            </div>
+            <Image className="h-32 w-full object-cover object-top lg:h-48" src={mistyMountains} alt="Profile background" />
             <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                 <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                     <div className="flex">
@@ -104,7 +102,7 @@ export default function ProfilePage() {
             </div>
 
             {/* Description list */}
-            <div className="mx-auto mt-6 max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto my-6 max-w-5xl px-4 sm:px-6 lg:px-8">
                 <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                     {Object.keys(profile.fields).map((field) => (
                         <div key={field} className="sm:col-span-1">

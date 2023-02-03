@@ -1,5 +1,6 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import Link from 'next/link';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import NavOption from './NavOption';
 import { NavOptionInput } from '@/lib/types';
@@ -52,8 +53,9 @@ export default function MobileNav({
                                 <NavLogo
                                     imgSrc={daemonLogo}
                                     imgAlt="Daemon Web Tools logo"
+                                    onClick={() => {setIsOpen(false)}}
                                 />
-
+                                
                                 {/** Sidebar links */}
                                 <nav className="mt-5 space-y-1 px-2">
                                     {navOptions.map((option) => (
@@ -70,6 +72,7 @@ export default function MobileNav({
                                 name="Josh Elias"
                                 imgSrc={joshyPic}
                                 imgAlt="Josh Elias profile picture"
+                                onClick={() => setIsOpen(false)}
                             />
 
                              {/** Close button */}

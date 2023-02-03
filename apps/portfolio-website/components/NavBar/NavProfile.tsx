@@ -5,17 +5,20 @@ import Link from 'next/link';
 export default function NavProfile({
     name,
     imgSrc,
-    imgAlt = "Profile picture"
+    imgAlt = "Profile picture",
+    onClick,
 }: {
     name: string,
     imgSrc: StaticImageData,
     imgAlt?: string,
+    onClick?: () => void
 }) {
     return (
         <div className="flex flex-shrink-0 border-t border-indigo-800 p-4">
             <Link 
                 href="/profile" 
                 className="group block w-full flex-shrink-0"
+                onClick={onClick}
             >
                 <div className="flex items-center">
                     <div>
