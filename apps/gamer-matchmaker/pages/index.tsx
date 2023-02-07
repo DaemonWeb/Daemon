@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Auth, ThemeSupa } from '@supabase/auth-ui-react';
 import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react';
+import Account from '@/components/Accounts';
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
         {!session ? (
           <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa}} theme="dark"/>
         ) : (
-          <p>Account page will go here.</p>
+          <Account session={session} />
         )}
       </main>
     </>
