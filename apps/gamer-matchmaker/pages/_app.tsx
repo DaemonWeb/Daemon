@@ -2,7 +2,10 @@ import '@/styles/globals.css';
 import { useState } from 'react';
 import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider, Session } from '@supabase/auth-helpers-react';
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import { Inter } from '@next/font/google';
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function App({ 
   Component, 
@@ -17,7 +20,9 @@ export default function App({
       supabaseClient={supabase} 
       initialSession={pageProps.initialSession}
     >
-      <Component {...pageProps} />
+      <div className={inter.className}>
+        <Component {...pageProps} />
+      </div>
     </SessionContextProvider>
   );
 }
