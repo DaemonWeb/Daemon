@@ -82,6 +82,7 @@ importers:
       '@next/font': 13.1.5
       '@supabase/auth-helpers-nextjs': ^0.5.4
       '@supabase/auth-helpers-react': ^0.3.1
+      '@supabase/auth-ui-react': ^0.2.6
       '@supabase/supabase-js': ^2.7.1
       '@types/node': 18.11.19
       '@types/react': 18.0.27
@@ -96,6 +97,7 @@ importers:
       '@next/font': 13.1.5
       '@supabase/auth-helpers-nextjs': 0.5.4_wwkefq4crizglppdxtjqhrdudm
       '@supabase/auth-helpers-react': 0.3.1_wwkefq4crizglppdxtjqhrdudm
+      '@supabase/auth-ui-react': 0.2.6_biqbaboplfbrettd7655fr4n2y
       '@supabase/supabase-js': 2.7.1
       '@types/node': 18.11.19
       '@types/react': 18.0.27
@@ -3949,6 +3951,14 @@ packages:
     resolution: {integrity: sha512-Gfkvwk9o9kE9r9XNBmJRfV8zONvXThnm1tcuojL04Uy5uRyqg93DC83lDebl0rocZCfKSjUv+fWYtMQmEDJldg==}
     dev: false
 
+  /@stitches/react/1.2.8_react@18.2.0:
+    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /@supabase/auth-helpers-nextjs/0.5.4_wwkefq4crizglppdxtjqhrdudm:
     resolution: {integrity: sha512-Xm3BMDOYPbNyuh8UXDRgBDc3JkeM5S2PfuC1jFJ73CCay4YiH1YxTz06Cvtp+vLH432qdjnqH+49ehVvUehPnQ==}
     peerDependencies:
@@ -3972,6 +3982,21 @@ packages:
       '@supabase/supabase-js': ^2.0.4
     dependencies:
       '@supabase/supabase-js': 2.7.1
+    dev: false
+
+  /@supabase/auth-ui-react/0.2.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-N2qxgsjxPQZPdDotVumzruj4RHaKNFb9ZRecttMeGOvrYFbMWRQVpWT/rYkTPsRW2phKiGXQlMwha6YxUE+t6Q==}
+    peerDependencies:
+      react: ^16.13.1 || ^17.0.1 || ^18.0.0
+      react-dom: ^16.13.1 || ^17.0.1 || ^18.0.0
+    dependencies:
+      '@stitches/core': 1.2.8
+      '@stitches/react': 1.2.8_react@18.2.0
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: false
 
   /@supabase/functions-js/2.0.0:
