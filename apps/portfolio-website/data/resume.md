@@ -32,7 +32,7 @@
 - Train new employees on system architecture
 - Manage development team and roadmap
 
-#### JULY 2012 - MAY 2015
+#### _JULY 2012 - MAY 2015_
 
 ### **Industry Corporation** - Software Engineer
 
@@ -41,7 +41,7 @@
 - Multi purpose kiosk platform for Samsung devices
 - Inter process security using HMAC and AES
 
-#### MARCH 2012 - DECEMBER 2012
+#### _MARCH 2012 - DECEMBER 2012_
 
 ### **Algonquin College** - Program Assistant
 
