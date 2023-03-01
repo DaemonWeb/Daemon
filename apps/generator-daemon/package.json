@@ -1,6 +1,6 @@
 {
   "name": "generator-daemon",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Scaffold applications based on starter projects from Daemon Web Tools",
   "homepage": "https://daemonweb.tools",
   "author": {
