@@ -215,7 +215,7 @@ services:
         condition: service_healthy
       storage:
         condition: service_started
-      kong: # Disable this if you are using an external Postgres database
+      kong:
         condition: service_started
     restart: unless-stopped
     env_file: .env
