@@ -24,20 +24,13 @@ export default ({ env }) => ({
         },
     },
     upload: {
-        config: {
-          provider: "strapi-provider-upload-supabase-v4",
-          providerOptions: {
-            apiUrl: env("SUPABASE_API_URL"),
-            apiKey: env("SUPABASE_API_KEY"),
-            bucket: env("SUPABASE_BUCKET"),
-            directory: env("SUPABASE_DIRECTORY"),
-            options: {},
-          },
-          actionOptions: {
-            upload: {},
-            uploadStream: {},
-            delete: {},
-          },
+      config: {
+        provider: 'strapi-provider-upload-supabase-storage',
+        providerOptions: {
+          apiKey: env('SUPABASE_API_KEY'),
+          apiUrl: env('SUPABASE_API_URL'),
+          apiInternalDomain: env('SUPABASE_INTERNAL_API_DOMAIN'),
         },
       },
+    },
 });

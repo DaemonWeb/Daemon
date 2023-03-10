@@ -213,6 +213,10 @@ services:
     depends_on:
       db: # Disable this if you are using an external Postgres database
         condition: service_healthy
+      storage:
+        condition: service_started
+      kong: # Disable this if you are using an external Postgres database
+        condition: service_started
     restart: unless-stopped
     env_file: .env
     environment:
@@ -225,6 +229,7 @@ services:
       ADMIN_JWT_SECRET: ${STRAPI_ADMIN_STRAPI_JWT_SECRET}
       DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
       SUPABASE_API_URL: ${SUPABASE_API_EXTERNAL_URL}
+      SUPABASE_INTERNAL_API_DOMAIN: "kong"
       SUPABASE_API_KEY: ${SUPABASE_SERVICE_ROLE_KEY}
       SUPABASE_BUCKET: strapi-uploads
       SUPABASE_DIRECTORY: ""

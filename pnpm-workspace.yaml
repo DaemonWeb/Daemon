@@ -1,4 +1,5 @@
 packages:
   - "apps/*"
   - "packages/*"
-  - "starters/supabase-strapi-next/*"
+  - "starters/supabase-strapi-next/backend/strapi"
+  - "starters/supabase-strapi-next/frontend"
