@@ -9,3 +9,6 @@ cd backend
 cp .env.example .env
 docker compose up
 ```
+
+### Use Strapi in Next
+Generate STRAPI_API_TOKEN_PUBLIC in Strapi Admin Portal and add it to your `.env` file.
