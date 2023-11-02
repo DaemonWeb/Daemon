@@ -4,7 +4,7 @@ import { LinkProps } from "next/link";
 export type NavOptionInput = {
     title: string,
     href: string,
-    icon: Heroicon,
+    icon: any,
     disabled?: boolean
 }
 
