@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daemonweb/supabase-strapi-next.git"
+    "url": "git+https://github.com/daemontechtools/supabase-strapi-next.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/daemonweb/supabase-strapi-next/issues"
+    "url": "https://github.com/daemontechtools/supabase-strapi-next/issues"
   },
-  "homepage": "https://github.com/daemonweb/supabase-strapi-next#readme"
+  "homepage": "https://github.com/daemontechtools/supabase-strapi-next#readme"
 }

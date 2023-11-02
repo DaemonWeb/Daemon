@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Daemon Web Tools</title>
-        <meta name="description" content="Services, Projects and Portfolio for Daemon Web Tools" />
+        <title>Daemon Tech Tools</title>
+        <meta name="description" content="Services, Projects and Portfolio for Daemon Tech Tools" />
       </Head>
       <HomeHero />
       <FeatureSection />

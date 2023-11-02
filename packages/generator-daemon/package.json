@@ -2,11 +2,11 @@
   "name": "generator-daemon",
   "version": "1.0.1",
   "description": "Scaffold applications based on starter projects from Daemon Web Tools",
-  "homepage": "https://daemonweb.tools",
+  "homepage": "https://daemontech.tools",
   "author": {
     "name": "Josh Elias",
-    "email": "josh@daemonweb.tools",
-    "url": "https://daemonweb.tools"
+    "email": "josh@daemontech.tools",
+    "url": "https://daemontech.tools"
   },
   "main": "generators/index.js",
   "types": "generators/index.d.ts",
@@ -82,6 +82,6 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "git@github.com:daemonweb/daemon.git",
+  "repository": "git@github.com:daemontechtools/daemon-nodejs.git",
   "license": "MIT"
 }

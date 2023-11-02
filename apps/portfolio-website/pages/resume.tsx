@@ -22,7 +22,7 @@ export default function Resume({
     return ( 
         <>
             <Head>
-                <title>Resume - Daemon Web Tools</title>
+                <title>Resume - Daemon Tech Tools</title>
                 <meta name="description" content="Resume for Josh Elias" />
             </Head>
             <ContentContainer>

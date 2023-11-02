@@ -4,7 +4,7 @@
 
 #### _SUMMER 2015 - PRESENT_
 
-### **Daemon Web Tools** - Owner
+### **Daemon Tech Tools** - Owner
 
 - Develop and implement web applications, hosting strategies and visual designs
 - Provide web development consultation

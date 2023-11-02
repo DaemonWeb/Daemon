@@ -1,6 +1,5 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import Link from 'next/link';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import NavOption from './NavOption';
 import { NavOptionInput } from '@/lib/types';

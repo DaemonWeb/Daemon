@@ -12,7 +12,7 @@ export type TemplateOptions = {
 
 const templateOptions: TemplateOptions = {
   "supabase-strapi-next":
-    "https://github.com/daemonweb/daemon/trunk/starters/supabase-strapi-next"
+    "https://github.com/daemontechtools/daemon/trunk/starters/supabase-strapi-next"
 };
 
 async function checkout(url:string, destination: string, log: (err:string) => {}) {

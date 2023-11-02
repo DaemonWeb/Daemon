@@ -19,7 +19,7 @@ export default function SideNav({
 
                     <NavLogo
                         imgSrc={daemonLogo}
-                        imgAlt="Daemon Web Tools logo"
+                        imgAlt="Daemon Tech Tools logo"
                     />
 
                     {/** Sidebar links */}

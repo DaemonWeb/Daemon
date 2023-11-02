@@ -44,8 +44,8 @@ export default function Projects({
   return (
     <>
         <Head>
-            <title>Projects - Daemon Web Tools</title>
-            <meta name="description" content="Projects for Daemon Web Tools" />
+            <title>Projects - Daemon Tech Tools</title>
+            <meta name="description" content="Projects for Daemon Tech Tools" />
         </Head>
         <ContentContainer>
             <TitleSection>

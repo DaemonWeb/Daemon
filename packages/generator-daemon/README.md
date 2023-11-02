@@ -25,12 +25,12 @@ yo daemon
 
 ## License
 
-MIT © [Josh Elias](https://daemonweb.tools)
+MIT © [Josh Elias](https://daemontechtools.tools)
 
 
 [npm-image]: https://badge.fury.io/js/generator-daemon.svg
 [npm-url]: https://npmjs.org/package/generator-daemon
-[travis-image]: https://travis-ci.com/daemonweb/generator-daemon.svg?branch=master
-[travis-url]: https://travis-ci.com/daemonweb/generator-daemon
-[daviddm-image]: https://david-dm.org/daemonweb/generator-daemon.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/daemonweb/generator-daemon
+[travis-image]: https://travis-ci.com/daemontechtools/generator-daemon.svg?branch=master
+[travis-url]: https://travis-ci.com/daemontechtools/generator-daemon
+[daviddm-image]: https://david-dm.org/daemontechtools/generator-daemon.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/daemontechtools/generator-daemon

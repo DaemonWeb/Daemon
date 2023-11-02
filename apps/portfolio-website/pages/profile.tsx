@@ -20,8 +20,8 @@ const profile: Profile = {
         <p>These days I’ve moved away from management to focus more on software development and collaborating with talented people all around the world to create the best products I can using cutting edge frameworks and techniques.</p>
     `,
     fields: {
-        Phone: '(343) 961-8935',
-        Email: 'josh@daemonweb.tools',
+        Phone: '(613) 462-2764',
+        Email: 'josh@daemontech.tools',
         Title: 'Senior Full Stack Developer',
         Location: 'Ottawa, ON Canada',
         Birthday: 'July 24, 1989',
@@ -40,13 +40,8 @@ const profile: Profile = {
         },
         {
             icon: twitterLogo,
-            url: 'https://twitter.com/DaemonWebDev',
+            url: 'https://twitter.com/DaemonTechTools',
             alt: 'Twitter Logo'
-        },
-        {
-            icon: facebookLogo,
-            url: 'https://www.facebook.com/joshgelias',
-            alt: 'Facebook Logo'
         },
         {
             icon: discordLogo,
@@ -60,7 +55,7 @@ export default function ProfilePage() {
   return (
     <>
         <Head>
-            <title>Profile - Daemon Web Tools</title>
+            <title>Profile - Daemon Tech Tools</title>
             <meta name="description" content="Profile for Josh Elias" />
         </Head>
         <div className="relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last">

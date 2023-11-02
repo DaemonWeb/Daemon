@@ -24,7 +24,7 @@ export default function HomeHero() {
                                         Explore Projects
                                     </Link>
                                     <a 
-                                        href="https://github.com/daemonweb/daemon" 
+                                        href="https://github.com/daemontechtools/daemon" 
                                         target='_blank'
                                         rel="noreferrer"
                                         className="text-base font-semibold leading-7 text-gray-900">
